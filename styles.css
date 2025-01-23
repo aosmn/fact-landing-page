@@ -1,137 +1,139 @@
 :root {
-    --primary-blue: #1d4457;
-    --primary-blue-transparent: #1d4457dd;
-    --white: #eef0f1;
-    --yellow: #f1b93f;
-    --yellow-hover: #f0c15a;
-    --red: #c65458;
+  --primary-blue: #1d4457;
+  --primary-blue-transparent: #1d4457dd;
+  --white: #eef0f1;
+  --yellow: #f1b93f;
+  --yellow-hover: #f0c15a;
+  --red: #c65458;
 }
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 * {
-    font-family: "Kantumruy Pro", serif;
-    /*font-family: "PT Sans Caption", serif;*/
-    font-weight: 400;
-    font-style: normal;
-    margin: 0;
-    overflow: auto;
+  font-family: "Kantumruy Pro", serif;
+  /*font-family: "PT Sans Caption", serif;*/
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  overflow: auto;
 }
 
 ul {
-    list-style: inside;
-    padding: 0;
+  list-style: inside;
+  padding: 0;
 }
 
 .cover-image {
-    background-image: url("./images/heading-bg.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh; /* Full viewport height */
-    position: relative; /* To position the overlay */
+  background-image: url("./images/heading-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /* Full viewport height */
+  position: relative; /* To position the overlay */
 }
 
 .side-image {
-    height: 100%;
+  height: 100%;
 }
 
 .side-image-1 {
-    background-image: url("./images/accreditation.jpg");
+  background-image: url("./images/accreditation.jpg");
 }
 .side-image-2 {
-    background-image: url("./images/training.jpg");
+  background-image: url("./images/training.jpg");
 }
 
 .side-image-3 {
-    background-image: url("./images/professional_dev.jpg");
+  background-image: url("./images/professional_dev.jpg");
 }
 
 .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--primary-blue-transparent);
-    z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-blue-transparent);
+  z-index: 1;
 }
 
 .content {
-    position: relative;
-    z-index: 2; /* Above the overlay */
+  position: relative;
+  z-index: 2; /* Above the overlay */
 }
 
 .footer-logo {
-    width: 4rem;
-    margin: 0 1rem;
+  width: 4rem;
+  margin: 0 1rem;
 }
 
 .subheading {
-    letter-spacing: 0.1rem;
+  letter-spacing: 0.1rem;
 }
 .font-sm {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 .font-xs {
-    font-size: 0.9rem;
+  font-size: 0.9rem;
 }
 
 .font-md {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .font-lg {
-    font-size: 1.75rem;
+  font-size: 1.75rem;
 }
 
 .btn-blue {
-    background-color: var(--primary-blue);
-    color: var(--white);
+  background-color: var(--primary-blue);
+  color: var(--white);
 }
 
 .btn-blue:hover {
-    background-color: var(--primary-blue-transparent);
-    color: var(--white);
+  background-color: var(--primary-blue-transparent);
+  color: var(--white);
 }
 
-
 .btn-white {
-    background-color: var(--white);
-    color: var(--primary-blue);
+  background-color: var(--white);
+  color: var(--primary-blue);
 }
 
 .btn-yellow {
-    background-color: var(--yellow);
-    color: var(--primary-blue);
+  background-color: var(--yellow);
+  color: var(--primary-blue);
 }
 
 .btn-yellow:hover {
-    background-color: var(--yellow-hover);
-    color: var(--primary-blue);
+  background-color: var(--yellow-hover);
+  color: var(--primary-blue);
 }
 
 .bg-dark {
-    background-color: var(--primary-blue) !important;
+  background-color: var(--primary-blue) !important;
 }
 
 .text-secondary {
-    color: var(--red) !important;
+  color: var(--red) !important;
 }
 
 @media (max-width: 768px) {
-    .side-image {
-        height: 24rem;
-    }
+  .side-image {
+    height: 24rem;
+  }
 }
 
 .container {
-    max-width: 960px;
+  max-width: 960px;
+}
+
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    flex: 1;
   }
-  
-  @media (min-width: 768px) {
-    .flex-md-equal > * {
-      flex: 1;
-    }
-  }
-  
+}
+
+.logo-text {
+  max-width: 26rem;
+}
