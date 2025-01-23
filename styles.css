@@ -137,3 +137,7 @@ ul {
 .logo-text {
   max-width: 26rem;
 }
+.job-title{
+  max-width: 14rem;
+  margin: auto
+}
